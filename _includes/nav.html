@@ -1,0 +1,13 @@
+<!--Navigation-->
+
+<nav class="nav-wrap">
+
+    <a href="{{ site.baseurl }}/" class="nav-logo {% if page.url == '/' %}nav-dark{%endif%}">
+        {% include logo.html %}
+
+    <ul class="navigation {% if page.url == '/' %}nav-dark{%endif%}">
+        <li><a href="{{ site.baseurl}}/">Home</a></li>
+        <li><a href="{{ site.baseurl}}/experience">Experience</a></li>
+        <li><a href="{{ site.baseurl}}/contact">Contact</a></li>
+    </ul>
+</nav>
