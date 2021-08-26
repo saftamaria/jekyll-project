@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Safta Antoneta
+title: Safta Antoneta 
 email: anto@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
  I am an Junior Web Developer who has builded this site by using jekyll tutorials with 
@@ -26,22 +26,25 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/antonetasafta" # the subpath of your site, e.g. /blog
 url: "https://antonetasafta.com" # the base hostname & protocol for your site, e.g. http://example.com
 
+twitter_path: https://twitter.com/_antonetasafta
+instagram_path: https://instagram.com/antonetasafta
+facebook_path: https://facebook.com/antonetasafta
+github_path: https://github.com/saftamaria.git
 
 #Build settings
-
 permalink: pretty
 markdown: kramdown
 
 gems:
--jekyll-feed
--jekyll-autoprefixer
+- jekyll-feed
+- jekyll-autoprefixer
 
 exclude:
--Gemfile
--Gemfile.lock
+- Gemfile
+- Gemfile.lock
 
 sass:
-  sass_dir:_sass
+  sass_dir: _sass
 
 
 # Exclude from processing.
