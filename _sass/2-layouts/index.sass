@@ -50,7 +50,7 @@ a.home-avatar
     height: 125px
     width: 125px
     border-radius: 125%
-    box-shadow: 0px 3px 6px 0px rgba(0,0,0,.50 )
+    box-shadow: 0px 6px 8px 0px #00000070
     background:
         image: url('../img/avatar.jpg')
         size: cover
@@ -64,15 +64,117 @@ a.home-avatar
     margin-bottom: -43px
 
 .who-is-she
-    max-width: 600px
+    max-width: 800px
     margin: 100px auto 100px auto
     padding-top: 50px
     padding-bottom: 50px
     text-align-last: center
     margin-bottom: 25px
-    transition-duration: 0.2s
+    font-style: italic
+    
 
 .who-is-she:hover
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.3) 
+    box-shadow: 2px 2px 20px #27272769 
+    transition-duration: 0.2s
 
+//Recent Project
+h2.recent-projects
+  text-align: center
+  padding-top: 10px
+  font-weight: 400
 
+.recent-projects-content-wrap
+  margin: auto
+  max-width: 600px
+  padding: 60px 20px 0 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+  .project-wrap
+    width: 100%
+    display: flex
+    justify-content: flex-start
+  .project-wrap:hover
+     box-shadow: 2px 2px 20px #27272769 
+     transition-duration: 0.2s
+    .project
+      max-width: 465px
+      min-height: 100px
+      margin: 20px 0
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      .project-img
+        background: $primary
+        height: 100px
+        width: 100px
+        flex: 0 0 100px
+        border-radius: 3px
+        cursor: pointer
+        color: $white
+        font-size: 2em
+        text-align: center
+        line-height: 100px
+      .project-img-one
+        background:
+          image: url('../img/1.jpg')
+          size: cover
+          position: center center
+          repeat: no-repeat
+      .project-img-two
+        background:
+          image: url('../img/2.jpg')
+          size: 108%
+          position: center center
+          repeat: no-repeat
+      .project-img-three
+        background:
+          image: url('../img/3.jpg')
+          size: cover
+          position: center center
+          repeat: no-repeat
+      .project-img-four
+        background:
+          image: url('../img/4.jpg')
+          size: cover
+          position: center center
+          repeat: no-repeat
+      .project-text
+        min-height: 83px
+        height: 100%
+        width: 100%
+        margin-left: 15px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        padding: 5px 0
+        h4
+          display: block
+          margin: 0
+          padding: 0
+          line-height: 1.2272727273em
+          font-weight: 400
+        p
+          line-height: 1.1875em
+  .project-wrap-reverse
+    justify-content: flex-end
+    .project
+      flex-direction: row-reverse
+      .project-text
+        text-align: right
+        margin-right: 15px
+        margin-left: 0
+  @media screen and(max-width: 465px)
+    .project-wrap
+      .project
+        flex-direction: column
+        min-height: 199px
+        .project-text
+          margin: 6px 0 0 0
+    .project-wrap-reverse
+      .project
+        align-items: flex-end
+        flex-direction: column
+        min-height: 189px
+        .project-text
+          margin: 6px 0 0 0
